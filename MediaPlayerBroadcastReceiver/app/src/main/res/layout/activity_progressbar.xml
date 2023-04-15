@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProgressBarActivity">
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:max="100"
+        android:progress="0" />
+
+    <TextView
+        android:id="@+id/current_time_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progress_bar"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:text="Текущее вермя"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/total_time_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBaseline="@id/current_time_text_view"
+        android:layout_marginEnd="16dp"
+        android:text="Суммарное время"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/play_pause_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/current_time_text_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Играть" />
+</RelativeLayout>
